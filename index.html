@@ -9,9 +9,21 @@
   <body>
     <main>
       <h1>Hello World</h1>
+      <ul>
+        <li class="list-item"><a href="">Home</a></li>
+        <li class="list-item"><a href="">Contact</a></li>
+        <li class="list-item"><a href="">About Us</a></li>
+        <li class="list-item"><a href="">Album</a></li>
+      </ul>
     </main>
     <script>
-      console.log("hello world from internal file");
+      // console.log("hello world from internal file");
+      const tags = document.getElementsByTagName("h1");
+      const lists = document.getElementsByTagName("li");
+      for (const li of lists) {
+        // console.log(li.innerText);
+        // console.log(li.innerHTML);
+      }
     </script>
     <script src="./Js/script.js"></script>
   </body>
