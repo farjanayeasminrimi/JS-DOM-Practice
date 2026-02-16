@@ -24,4 +24,18 @@ paragraph.classList.remove("bg-green");
 const ancor = document.querySelector(".youtube");
 const link = ancor.getAttribute("href");
 const github = ancor.setAttribute("href", "https://github.com/farjanayeasminrimi/JS-DOM-Practice");
-console.log(ancor);
+// console.log(ancor);
+
+// childNote & ParentNode
+
+const menuBar = document.getElementById("menu");
+// console.log(menuBar.childNodes);
+// console.log(menuBar.children);
+
+const newListItem = document.createElement("li");
+const newAncor = document.createElement("a");
+newAncor.innerText = "Song Album List";
+newAncor.classList.add("list-item");
+newListItem.appendChild(newAncor);
+menuBar.appendChild(newListItem);
+// console.log(newListItem);
